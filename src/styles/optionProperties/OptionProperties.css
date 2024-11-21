@@ -1,0 +1,118 @@
+.OptionProperties {
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.OptionProperties .inner-wrapper {
+  margin-top: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  justify-content: space-between;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard {
+  width: 49%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard .imgBox {
+  width: 70%;
+  overflow: hidden;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(1) {
+  position: relative;
+  top: 10rem;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(3) {
+  position: relative;
+  top: 30rem;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(2) .imgBox,
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(3) .imgBox {
+  width: 100%;
+  max-height: 50rem;
+  overflow: hidden;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard span {
+  position: absolute;
+  top: -15rem;
+  right: 8rem;
+  font-family: var(--ff-fraunces);
+  font-size: 25rem;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 25rem;
+  letter-spacing: -12.5px;
+  color: var(--black);
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(1) span,
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(4) span{
+    right: 12rem;
+}
+
+.OptionProperties .inner-wrapper .OptionPropertiesCard .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard .content h6 {
+  font-family: var(--ff-satisfy);
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: -0.8100000023841858px;
+  color: var(--black);
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard .content p {
+  font-family: var(--ff-satisfy);
+  font-weight: 400;
+  line-height: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  letter-spacing: -0.36800000071525574px;
+  text-align: center;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+@media (max-width:499px){
+  .OptionProperties .inner-wrapper .OptionPropertiesCard{
+    min-width: 100%;
+    width: 100%;
+  }
+  .OptionProperties .inner-wrapper .OptionPropertiesCard{
+    top: 0 !important;
+  }
+  .OptionProperties .inner-wrapper .OptionPropertiesCard span{
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: -4.5px;
+    top: -4rem !important;
+    right: 4rem !important;
+  }
+  .OptionProperties .inner-wrapper .OptionPropertiesCard .content h6{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .OptionProperties .inner-wrapper .OptionPropertiesCard .content p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+  .OptionProperties .inner-wrapper .OptionPropertiesCard .imgBox{
+    width: 100% !important;
+  }
+  .OptionProperties .inner-wrapper{
+    gap: 8rem;
+  }
+  .OptionProperties,
+  .OptionProperties .inner-wrapper{
+    margin-top: 4rem;
+  }
+}
