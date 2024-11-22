@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 const TownshipContent = ({ data }) => {
   const content = data?.[0];
@@ -17,7 +19,9 @@ const TownshipContent = ({ data }) => {
             );
           })}
           <h1 className="ylwTag">{content?.tagline}</h1>
+          <Link to={'/details-page'}>
           <button>Learn More</button>
+          </Link>
         </div>
         <div className="right sm-w-100">
           <img src={content?.img} alt="" />
