@@ -40,8 +40,8 @@ const HeroSection = () => {
           <div className='space-y-4'>
             <h1 className='md:text-7xl text-5xl'>Modern apartment on the bay</h1>
             <div>
-              <button className='uppercase  text-white bg-orange-500 mr-5 px-4 py-2 rounded-md'>Featured</button>
-              <button className='uppercase  text-white bg-[#000000A6] mr-5 px-4 py-2 rounded-md'>For rent</button>
+              <button className='uppercase  text-white text-xl mr-5 px-4 py-2 rounded-md' style={{ background: "var(--primary-yellow)" }}>Featured</button>
+              <button className='uppercase  text-white text-xl bg-[#000000A6] mr-5 px-4 py-2 rounded-md'>For rent</button>
             </div>
             <div className='flex gap-3 text-[#000000A6]'>
               <CiLocationOn />

@@ -48,7 +48,7 @@ const TajParadise = () => {
 
           <div className="inner-wrapper">
             <div className="tab-panel">
-              <div className="panel-wrapper w-100 flex justify-center wrap gap-[2rem]">
+              <div className="panel-wrapper w-100 flex justify-center flex-wrap gap-[2rem]">
                 {allCategory?.map((cat, i) => {
                   return (
                     <div
@@ -67,12 +67,12 @@ const TajParadise = () => {
                 })}
               </div>
             </div>
-            <div className="flex gap-[2rem] justify-center flex-wrap mt-[5rem]">
+            <div style={{rowGap:'2rem', columnGap:'2%'}} className="flex justify-center flex-wrap mt-[5rem]">
               {filterData?.map((e, i) => {
                 return (
                   <div
                     key={`taj${i}`}
-                    className={`capitalize cursor-pointer min-w-[125px] text-[1.8rem] p-[3rem_4.4rem] bg-[#131212] rounded-[1rem] border-2 group relative ${
+                    className={`capitalize cursor-pointer min-w-[48%] w-[48%] lg:min-w-[12%] lg:w-[12%] md:min-w-[32%] md:w-[32%] flex justify-center items-center text-[1.8rem] leading-8 p-[3rem_4.4rem] bg-[#131212] rounded-[1rem] border-2 group relative ${
                       e?.status === "available" ? "bg-green-500" : "bg-red-500"
                     }`}
                   >
