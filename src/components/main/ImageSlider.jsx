@@ -16,7 +16,7 @@ const ImageSlider = ({ data, tab }) => {
         {tab === "photos" ? (
           <img
             src={data?.[currentIndex]?.src}
-            className="slider__item-img rounded-2xl"
+            className="slider__item-img h-[50vh] rounded-2xl"
             alt={`User Pic ${currentIndex + 1}`}
           />
         ) : (

@@ -361,7 +361,7 @@ const VirtualTour = () => {
     const thumbnailUrl = VirtualTourImage;
 
     return (
-        <div className="w-full">
+        <div className="w-full mb-10">
             <h2 className="text-5xl font-semibold py-10 mb-10 border-b">{videoData.title}</h2>
             <div
                 className="relative w-full "
@@ -1159,6 +1159,7 @@ const AllContent = () => {
                 <FloorPlans />
                 <VideoModal />
                 <VirtualTour />
+                <PopupForm/>
                 <PropertyTourScheduler />
                 <WalkscoreDisplay />
                 <ReviewForm />

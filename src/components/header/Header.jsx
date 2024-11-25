@@ -6,7 +6,7 @@ import ButtonMain from '../UI/ButtonMain';
 import '../../styles/global/Header.css';
 import { useState } from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
-
+import newsletter from '../../assets/docs/newsletter.pdf'
 const Header = () => {
   const location = useLocation();
 
@@ -18,8 +18,9 @@ const Header = () => {
       link: '#project',
     },
     {
-      name: 'PRICING',
-      link: '#plan',
+      name: 'NEWSLETTER',
+      link: newsletter,
+      blank:true
     },
     {
       name: 'ABOUT',
@@ -45,7 +46,7 @@ const Header = () => {
     <header className="Header">
       <div className="header-container">
         <a href={AuthenticatedRoutes.HOME} className="header-logo">
-          <img src={MainContent.appLogo} alt="App Logo" className="appLogo" />
+          <img src={MainContent.appLogo} alt="App Logo" className="appLogo -rotate-[85deg]" />
         </a>
 
         {/* Mobile Menu Toggle */}
@@ -75,6 +76,7 @@ const Header = () => {
                   href={item.link}
                   className={`nav-link ${isActive(item.link)}`}
                   onClick={closeMobileMenu} // Close menu on link click
+                  target={item?.blank && '_blank'}
                 >
                   {item.name}
                 </a>

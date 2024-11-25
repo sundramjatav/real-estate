@@ -74,6 +74,14 @@
   text-align: center;
   color: var(--primary-yellow);
 }
+.big-heading1 {
+  font-family: var(--ff-dm-display);
+  font-size: 12rem;
+  font-weight: 400;
+  line-height: 20.11rem;
+  text-align: center;
+  color: var(--primary-yellow);
+}
 .big-heading.blck {
   color: #101616;
 }
@@ -138,6 +146,83 @@
   transition: all 0.3s ease;
 }
 
+.inputFieldBox .inputLabel {
+  font-family: var(--ff-roboto);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: left;
+  color: #071c3c;
+}
+.inputFieldBox .inputBody {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.inputFieldBox {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  padding-bottom: .8rem;
+  border-bottom: 2px solid #c9f3ff;
+}
+.inputFieldBox .inputBody input,
+.inputFieldBox .inputBody textarea,
+.inputFieldBox .inputBody select {
+  width: 100%;
+  font-family: var(--ff-roboto);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.87rem;
+  color: #071c3c99;
+  border: none;
+  outline: none;
+  /* background: transparent; */
+  padding: 1rem;
+}
+.inputFieldBox .inputBody textarea {
+  border: 2px solid #c9f3ff;
+  border-radius: 4px;
+  padding: 1.2rem;
+  min-height: 10rem;
+}
+.inputFieldBox .inputBody .icon {
+  font-size: 2rem;
+  color: #071c3c;
+}
+.error{
+  font-size: 1.4rem;
+  color: red;
+}
+.ContactForm{
+  background-color:#ffffffca;
+  padding: 3.2rem;
+  border-radius: 2rem;
+  min-width: 32%;
+  height: fit-content;
+}
+.ContactForm .input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ContactForm .check-term{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.ContactForm .check-term .sm-txt{
+  font-size: 1.6rem;
+}
+.ContactForm .black.ButtonMain{
+  width: 100%;
+  margin: 2rem auto;
+  background: var(--white);
+  font-size: 2rem;
+  padding: 2rem ;
+}
+
 @media (max-width: 999px) {
   .sm-flex-column {
     display: flex;
@@ -191,8 +276,12 @@
   .section-inner {
     width: 92%;
   }
+  .big-heading1,
   .big-heading {
     font-size: 4rem;
     line-height: 5.11rem;
+}
+.AboutSection .heading2{
+  text-align: center;
 }
 }

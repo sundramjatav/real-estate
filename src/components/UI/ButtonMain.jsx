@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-const ButtonMain = ({ clsName, name }) => {
+const ButtonMain = ({ clsName, name, onclick }) => {
   return (
     <>
-      <button className={`ButtonMain ${clsName ? clsName : ""}`}>{name}</button>
+      <button onClick={onclick} className={`ButtonMain ${clsName ? clsName : ""}`}>{name}</button>
     </>
   );
 };

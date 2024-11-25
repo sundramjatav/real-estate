@@ -3,16 +3,16 @@ import underlinePng from "../../assets/svg/underline.png";
 import ImageSlider from "../main/ImageSlider";
 import img1 from "../../assets/layout-section/image1.jpg";
 import img2 from "../../assets/layout-section/image2.jpg";
-import img3 from "../../assets/layout-section/image3.jpg";
+import img3 from "../../assets/layout-section/map3.jpg";
 import img4 from "../../assets/layout-section/image4.jpg";
 import img5 from "../../assets/layout-section/image5.jpg";
-import img6 from "../../assets/layout-section/image6.jpg";
+import img6 from "../../assets/layout-section/map2.jpg";
 import video1 from '../../assets/layout-section/video1.mp4'
 import video2 from '../../assets/layout-section/video2.mp4'
 import video3 from '../../assets/layout-section/video3.mp4'
 import video4 from '../../assets/layout-section/video4.mp4'
 import video5 from '../../assets/layout-section/video5.mp4'
-import layoutMap from "../../assets/layout-section/layoutMap.png";
+import layoutMap from "../../assets/layout-section/map3.jpg";
 import "../../styles/planLayoutSection/PlanLayoutSection.css";
 import { IoImageOutline, IoVideocamOutline } from "react-icons/io5";
 import { Md360 } from "react-icons/md";

@@ -5,7 +5,7 @@ import tajlogo from "../../assets/main/highlightImg.png";
 import TownshipContent from "./TownshipContent";
 import "../../styles/main/Township.css";
 
-const Township = () => {
+const Township = ({name}) => {
   const tabPanel = [
     {
       name: "THE EMERALD",
@@ -120,7 +120,7 @@ const Township = () => {
                 key={`content${i}`}
                 className={`tab-pane ${activeTab === tabKey ? "active" : ""}`}
               >
-                <TownshipContent data={e?.data} />
+                <TownshipContent name={name} data={e?.data} />
               </div>
             );
           })}

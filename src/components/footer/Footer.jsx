@@ -6,6 +6,7 @@ import { MdOutlineFacebook } from "react-icons/md";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaTelegramPlane } from "react-icons/fa";
 import "../../styles/global/Footer.css";
+import ContactForm from "../contactUs/ContactForm";
 
 const Footer = () => {
   return (
@@ -18,6 +19,7 @@ const Footer = () => {
             <span className="btm para">
               Buy a home near <br /> parks & green spaces
             </span>
+            <ContactForm />
             <BigButton />
           </div>
         </div>
@@ -29,7 +31,7 @@ const Footer = () => {
           {/* Left Section: Logo, Description, Social Links */}
           <div className="left sm-w-100">
             <div className="appLogo">
-              <img src={MainContent.appLogo} alt="App Logo" />
+              <img src={MainContent.appLogo} alt="App Logo" className="-rotate-90"/>
             </div>
             <p className="para">{MainContent.appDesc}</p>
             <div className="about">

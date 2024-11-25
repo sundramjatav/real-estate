@@ -70,7 +70,7 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row gap-5 md:h-[90vh]">
         {/* Left Side */}
         <div
-          className="w-full h-2/3 md:h-full md:w-full p-10 rounded-[3rem] bg-gray-50"
+          className="w-full h-[50vh] md:h-full md:w-full p-10 rounded-[3rem] bg-gray-50"
           style={{
             backgroundImage: `url(${currentBg})`,
             backgroundSize: "cover",
@@ -78,7 +78,9 @@ const HeroSection = () => {
           }}
         >
           <div className='flex w-full justify-between'>
-            <PopupForm />
+            <div className='hidden md:block'>
+              <PopupForm />
+            </div>
             <div className='text-4xl hidden md:flex  items-start gap-3 justify-start'>
               <div className='text-white p-4 rounded-lg' style={{ background: "var(--primary-yellow)" }}>
                 <IoImagesOutline />

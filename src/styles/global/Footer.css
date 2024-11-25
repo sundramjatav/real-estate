@@ -158,9 +158,22 @@
 @media (max-width:499px) {
   .Footer .footer-img .section-inner{
     flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
-  .Footer .footer-img{
+  .Footer .footer-img .section-inner .para{
+    width: 100%;
+    text-align: center;
+    
+  }
+  .Footer .footer-img .section-inner .para br{
     display: none;
+  }
+  .Footer .footer-img .img-box img{
+    display: none;
+  }
+  .Footer .footer-img .section-inner{
+    position: relative;
   }
   .Footer .footer-inner .section-inner{
     flex-direction: column-reverse !important;
