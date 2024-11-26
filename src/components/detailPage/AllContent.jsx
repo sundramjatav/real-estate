@@ -999,7 +999,7 @@ const ContactForm = () => {
                     </div>
 
                     {/* Contact Numbers */}
-                    <div className="flex gap-10  space-y-2">
+                    <div className="flex sm:gap-10 flex-col sm:flex-row  space-y-2">
                         <div className="flex items-center space-x-2">
                             <BiPhone className="w-8 h-8 text-gray-600" />
                             <span className="text-gray-700">7024393158</span>
@@ -1159,7 +1159,9 @@ const AllContent = () => {
                 <FloorPlans />
                 <VideoModal />
                 <VirtualTour />
+                <div className="md:hidden">
                 <PopupForm/>
+                </div>
                 <PropertyTourScheduler />
                 <WalkscoreDisplay />
                 <ReviewForm />

@@ -13,6 +13,7 @@ body {
   font-weight: 500;
   line-height: 1.5rem;
   color: var(--primary-black);
+  scroll-behavior: smooth;
 }
 
 

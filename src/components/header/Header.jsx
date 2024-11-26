@@ -24,7 +24,7 @@ const Header = () => {
     },
     {
       name: 'ABOUT',
-      link: '#about',
+      link: '/about',
     },
     {
       name: 'CONTACT',
@@ -39,17 +39,16 @@ const Header = () => {
   };
 
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false); // Close the menu when a link is clicked
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <header className="Header">
       <div className="header-container">
         <a href={AuthenticatedRoutes.HOME} className="header-logo">
-          <img src={MainContent.appLogo} alt="App Logo" className="appLogo -rotate-[85deg]" />
+          <img src={MainContent.appLogo} alt="App Logo" className="appLogo " />
         </a>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="menu-toggle"
           onClick={toggleMobileMenu}
@@ -58,9 +57,7 @@ const Header = () => {
           ☰
         </button>
 
-        {/* Navigation Menu */}
         <nav className={`nav ${isMobileMenuOpen ? 'active' : ''}`}>
-          {/* Close button */}
           <button
             className="menu-toggle-close"
             onClick={toggleMobileMenu}

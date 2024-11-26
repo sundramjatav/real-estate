@@ -31,7 +31,7 @@ const Footer = () => {
           {/* Left Section: Logo, Description, Social Links */}
           <div className="left sm-w-100">
             <div className="appLogo">
-              <img src={MainContent.appLogo} alt="App Logo" className="-rotate-90"/>
+              <img src={MainContent.appLogo} alt="App Logo"/>
             </div>
             <p className="para">{MainContent.appDesc}</p>
             <div className="about">

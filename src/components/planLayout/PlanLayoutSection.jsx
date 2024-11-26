@@ -72,7 +72,7 @@ const PlanLayoutSection = () => {
       <div className="section-inner">
         <div className="top-header">
           <span className="ylwTag">OUR GALLERY</span>
-          <h4 className="heading2">Layouts Plan</h4>
+          <h4 className="heading2">Layouts Plan & Real Images</h4>
           <p className="para">
             Smart Panning is not always about Grandeur, It's about creating the
             Grandeur by using Natural resources smartly

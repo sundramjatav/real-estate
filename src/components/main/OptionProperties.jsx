@@ -1,8 +1,8 @@
 import "../../styles/optionProperties/OptionProperties.css";
-import img1 from "../../assets/properties/img1.png";
-import img2 from "../../assets/properties/img2.png";
-import img3 from "../../assets/properties/img3.png";
-import img4 from "../../assets/properties/img4.png";
+import img1 from "../../assets/properties/image1.png";
+import img2 from "../../assets/properties/image2.png";
+import img3 from "../../assets/properties/image3.png";
+import img4 from "../../assets/properties/image4.png";
 import OptionPropertiesCard from "./OptionPropertiesCard";
 const OptionProperties = () => {
   const data = [
@@ -14,17 +14,18 @@ const OptionProperties = () => {
     {
       img: img2,
       title: "B Block",
-      desc: "B-1 to B-15 - Farmhouse plots A-16 to A-32 - Luxury Villas",
+      desc: "B-1 to B-15 - Semi Commercial/Farmhouse plots B-16 to B-26 - Farmhouse plots",
     },
     {
       img: img4,
       title: "C Block",
-      desc: "C-1 to C-15 - Farmhouse plots A-16 to A-32 - Luxury Villas",
+      desc: "C-1 to C-23 - Commercial plots C-24 to C-147 - Residential plots",
+      para:"includes C-82 to C-92 - Duplex (row houses)"
     },
     {
       img: img3,
       title: "D Block",
-      desc: "D-1 to D-15 - Farmhouse plots A-16 to A-32 - Luxury Villas",
+      desc: "D-1 to D-32 - Farmhouse plots D-33 to D-43 - Singlex (2BHK)",
     },
   ];
   return (

@@ -21,8 +21,13 @@
   position: relative;
 }
 .OptionProperties .inner-wrapper .OptionPropertiesCard .imgBox {
-  width: 70%;
+  width:80%;
+  height: 32rem;
   overflow: hidden;
+  margin: 0 auto;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard .imgBox img{
+  height: 100%;
 }
 .OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(1) {
   position: relative;
@@ -53,6 +58,9 @@
 .OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(1) span,
 .OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(4) span{
     right: 12rem;
+}
+.OptionProperties .inner-wrapper .OptionPropertiesCard:nth-child(4){
+  top: 15rem;
 }
 
 .OptionProperties .inner-wrapper .OptionPropertiesCard .content {

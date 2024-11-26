@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { AiOutlineShop } from "react-icons/ai";
 import township from "../../assets/township1.png";
+import township1 from "../../assets/township2.jpg";
 import tajlogo from "../../assets/main/highlightImg.png";
 import TownshipContent from "./TownshipContent";
 import "../../styles/main/Township.css";
 
-const Township = ({name}) => {
+const Township = ({name, className}) => {
   const tabPanel = [
     {
       name: "THE EMERALD",
@@ -21,7 +22,7 @@ const Township = ({name}) => {
             "Every room is an expression of elegance, with premium finishes and expansive spaces that are sure to leave a lasting impression. The Emerald is the epitome of modern living, designed for those who appreciate the finest things in life.",
             "Living in The Emerald means more than just owning a home—it's about embracing a lifestyle of exclusivity, where every day feels like a retreat in the lap of luxury.",
           ],
-          img: township,
+          img: township1,
         },
       ],
     },
@@ -57,7 +58,7 @@ const Township = ({name}) => {
             "Each villa is designed to ensure a harmonious blend of style and function, providing an extraordinary living experience that meets all your needs and desires.",
             "Living in The Ruby means embracing a lifestyle of refined luxury, where every moment is an opportunity to enjoy life at its finest.",
           ],
-          img: township,
+          img: township1,
         },
       ],
     },
@@ -89,12 +90,12 @@ const Township = ({name}) => {
   };
 
   return (
-    <div className="Township">
+    <div className={`Township ${className ? className : ''}`}>
       <div className="inner sm-flex-column">
         <div className="tab-panel">
-          <div className="head">
+          {/* <div className="head">
             <img src={tajlogo} className="w-96" alt="Taj Logo" />
-          </div>
+          </div> */}
 
           <div className="panel-wrapper">
             {tabPanel?.map((e, i) => {
@@ -120,7 +121,7 @@ const Township = ({name}) => {
                 key={`content${i}`}
                 className={`tab-pane ${activeTab === tabKey ? "active" : ""}`}
               >
-                <TownshipContent name={name} data={e?.data} />
+                <TownshipContent  name={name} data={e?.data} />
               </div>
             );
           })}

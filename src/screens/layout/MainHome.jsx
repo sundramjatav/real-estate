@@ -23,11 +23,11 @@ const MainHome = () => {
         <PlanLayoutSection />
         <OptionProperties />
         <Township name={'Taj The Paradise:'} />
-        <Township name={'Highway Dream:'} />
+        <Township name={'Highway Dream:'} className={'even'} />
         <TajParadise />
         <Masterpiece />
         <WeOffer />
-        <AvailableApartment />
+        {/* <AvailableApartment /> */}
         <Footer />
       </SectionContainer>
     </>

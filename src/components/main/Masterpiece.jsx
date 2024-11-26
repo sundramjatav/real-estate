@@ -22,7 +22,7 @@ const Masterpiece = () => {
           <ButtonMain name={"Explore"} />
           <div className="inner-wrapper">
             <div className="imgCardName">
-              <span>Exclusive gifts. Insider access. Special events.</span>
+              <span>Strategically located near bhopal.</span>
               <div className="cardImg">
                 <img src={left} alt="" />
               </div>
@@ -52,7 +52,7 @@ const Masterpiece = () => {
               <div className="cardImg">
                 <img src={right} alt="" />
               </div>
-              <span>ExcBeauty Nature Culture</span>
+              <span>Return on investment guranteed.</span>
             </div>
           </div>
         </div>

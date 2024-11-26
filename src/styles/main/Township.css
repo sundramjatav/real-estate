@@ -1,6 +1,9 @@
 .Township {
   width: 100%;
-  margin-top: 20rem;
+  margin-top: 35rem;
+}
+.Township.even{
+  margin-top: 10rem;
 }
 .Township .inner {
   width: 100%;
@@ -44,7 +47,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .TownshipContent .right {
   min-width: 40%;
@@ -90,9 +93,21 @@
   background-color: var(--primary-yellow);
   margin-top: 2rem;
 }
+.Township.even .inner{
+  padding-left: 0;
+  padding-right: 5%;
+}
+.Township.even .inner,
+.Township.even .inner .TownshipContent{
+  flex-direction: row-reverse;
+}
 @media (max-width: 799px) {
-  .Township .inner{
+  .Township .inner,
+  .Township.even .inner{
     padding: 2rem;
+  }
+  .Township.even{
+    margin-top: 0;
   }
 }
 

@@ -5,10 +5,10 @@ const TownshipContent = ({ data ,name }) => {
   const content = data?.[0];
   return (
     <>
-      <div className="TownshipContent sm-flex-column">
+      <div className="TownshipContent sm-flex-column ">
         <div className="left sm-w-100">
           <h4 className="heading2">
-            {name} <span>{content?.heading}</span>{" "}
+            {name} <br /><span>{content?.heading}</span>{" "}
           </h4>
           <h1 className="subHeading">{content?.subHeading}</h1>
           {content?.details?.map((e, i) => {

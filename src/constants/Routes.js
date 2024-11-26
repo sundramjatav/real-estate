@@ -7,4 +7,5 @@ export const AuthRoutes = {
 export const AuthenticatedRoutes = {
   HOME: "/",
   DETAILPAGE: "/details-page",
+  ABOUTPAGE: "/about",
 };
