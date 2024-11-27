@@ -62,7 +62,7 @@ const AboutSection1 = () => {
                         <li className="text-3xl text-gray-600 font-normal flex gap-2"><p>→</p> Accessible via a four-lane road.
                         </li>
                         <li className="text-3xl text-gray-600 font-normal flex gap-2"><p>→</p> Close to Ratapani Sanctuary </li>
-                        <li className="text-3xl text-gray-600 font-normal flex gap-2"><p>→</p> With promising returns projected to be upto 3x in the coming years.</li>
+                        <li className="text-3xl text-gray-600 font-normal flex gap-2"><p>→</p> With promising returns projected to be up to 3x in the coming years.</li>
                       </ul>
                     </div>
                   </div>
