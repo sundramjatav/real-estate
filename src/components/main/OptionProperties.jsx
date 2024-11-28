@@ -17,13 +17,13 @@ const OptionProperties = () => {
       desc: "B-1 to B-15 - Semi Commercial/Farmhouse plots B-16 to B-26 - Farmhouse plots",
     },
     {
-      img: img4,
+      img: img3,
       title: "C Block",
       desc: "C-1 to C-23 - Commercial plots C-24 to C-147 - Residential plots",
       para:"includes C-82 to C-92 - Duplex (row houses)"
     },
     {
-      img: img3,
+      img: img4,
       title: "D Block",
       desc: "D-1 to D-32 - Farmhouse plots D-33 to D-43 - Singlex (2BHK)",
     },
