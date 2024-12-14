@@ -27,7 +27,7 @@ const TajParadise = () => {
       .get("https://adapi.aspirantsally.com/api/properties")
       .then((response) => {
         setAllData(response.data);
-        console.log(response.data,"responsive data");
+        console.log(response.data, "responsive data");
       })
       .catch((error) => {
         console.log(error.message);
@@ -53,12 +53,11 @@ const TajParadise = () => {
                   return (
                     <div
                       key={`categ${i}`}
-                      className={` text-[2rem] text-[#8f9fa3] cursor-pointer p-[1.8rem_2.4rem] rounded-lg ${
-                        activeTab?.replaceAll(" ", "_") ===
-                        cat?.replaceAll(" ", "_")
+                      className={` text-[2rem] text-[#8f9fa3] cursor-pointer p-[1.8rem_2.4rem] rounded-lg ${activeTab?.replaceAll(" ", "_") ===
+                          cat?.replaceAll(" ", "_")
                           ? "text-[#fff] bg-[#e79600]"
                           : ""
-                      }`}
+                        }`}
                       onClick={() => handleTabClick(cat?.replaceAll(" ", "_"))}
                     >
                       {cat}
@@ -67,17 +66,15 @@ const TajParadise = () => {
                 })}
               </div>
             </div>
-            <div style={{rowGap:'2rem', columnGap:'2%'}} className="flex justify-center flex-wrap mt-[5rem]">
+            <div style={{ rowGap: '2rem', columnGap: '2%' }} className="flex justify-center flex-wrap mt-[5rem]">
               {filterData?.map((e, i) => {
                 return (
                   <div
                     key={`taj${i}`}
-                    className={`capitalize cursor-pointer min-w-[48%] w-[48%] lg:min-w-[12%] lg:w-[12%] md:min-w-[32%] md:w-[32%] flex justify-center items-center text-[1.8rem] leading-8 p-[3rem_4.4rem] bg-[#131212] rounded-[1rem] border-2 group relative ${
-                      e?.status === "available" ? "bg-green-500" : "bg-red-500"
-                    }`}
+                    className={`capitalize cursor-pointer min-w-[48%] w-[48%] lg:min-w-[12%] lg:w-[12%] md:min-w-[32%] md:w-[32%] flex justify-center items-center text-[1.8rem] leading-8 p-[3rem_4.4rem] bg-[#131212] rounded-[1rem] border-2 group relative ${e?.status === "available" ? "bg-green-500" : "bg-red-500"
+                      }`}
                   >
                     <h1
-                      // style={{ fontFamily: "var(--ff-satisfy)" }}
                       className="name text-[2.2rem] text-white "
                     >
                       {e?.name}
@@ -94,7 +91,7 @@ const TajParadise = () => {
                         <p className="text-nowrap text-[#e79600]">
                           Name: <b>{e?.name}</b>
                         </p>
-
+                        <p className="text-nowrap text-[#e79600] mt-[1.6rem]">Space: {e.space}</p>
                         <p className="text-nowrap text-[#e79600] mt-[1.6rem]">
                           Status:{" "}
                           <b
